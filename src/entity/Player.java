@@ -63,9 +63,6 @@ public class Player extends Entity{
 
     public void draw(Graphics2D g2){
 
-//        g2.setColor(Color.white);
-//
-//        g2.fillRect(x,y,gp.tileSize, gp.tileSize);
         switch (direction){
             case "up":
                 if (spriteNum == 1){
@@ -99,7 +96,7 @@ public class Player extends Entity{
 
 
 
-        g2.drawImage(image,gp.screenWidth/2, gp.screenHeight/2, gp.tileSize, gp.tileSize, null);
+        g2.drawImage(image,x, y, gp.tileSize, gp.tileSize, null);
 
         g2.dispose();
     }
